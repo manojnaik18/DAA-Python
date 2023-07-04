@@ -39,9 +39,6 @@ class Graph:
                     parent[v] = min_index
 
         self.print_mst(parent)
-
-
-# Accepting user input
 n = int(input("Enter the number of thermal power stations: "))
 g = Graph(n)
 
@@ -50,6 +47,4 @@ for i in range(n):
     for j in range(i+1, n):
         cost = int(input(f"Enter the cost between thermal station {i} and {j}: "))
         g.add_edge(i, j, cost)
-
-# Compute and display the minimum cost connection
 g.prim_mst()
