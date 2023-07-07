@@ -16,7 +16,6 @@ def schedulejobs(jobs, T):
                 break 
     print("The scheduled jobs are",list(filter(lambda x: x !=-1,slot)))
     print("The total profit earned is",profit) 
-
 if __name__ =='__main__':   
     n = int(input("Enter the number of jobs: "))
     jobs = []
