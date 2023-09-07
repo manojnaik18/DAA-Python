@@ -28,3 +28,8 @@ print("Maximum profit:", max_profit)
 print("Selected coffee beans (index):", selected_items)
 print("Selected coffee beans (weights):", [weights[i] for i in selected_items])
 print("Selected coffee beans (costs):", [costs[i] for i in selected_items])
+
+# Maximum profit: 70
+# Selected coffee beans (index): [3, 1, 0]
+# Selected coffee beans (weights): [5, 3, 2]
+# Selected coffee beans (costs): [40, 20, 10]
