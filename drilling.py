@@ -15,8 +15,8 @@ def tsp_optimal_drilling(distances):
     optimal_order = nx.approximation.traveling_salesman_problem(G,cycle=True)   
     return optimal_order
 
-def calculate_optimal_cost(drill_order,distances):
-    total_cost=sum(distances[(drill_order[i],drill_order[i+1])] for i in range(len(drill_order)-1))
+def calculate_optimal_cost(optimal_order,distances):
+    total_cost=sum(distances[(optimal_order[i],optimal_order[i+1])] for i in range(len(optimal_order)-1))
     return total_cost
 
 if __name__ == "__main__":
